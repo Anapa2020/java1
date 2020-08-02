@@ -18,12 +18,12 @@ public class TriangleInfo {
             return a > b || a < b && a > c || a < c && b > c || b < c;
         }
         public static boolean isIsoscelesTriangle(int a, int b, int c){
-            if (a >= b || a <= b && a >= c || a <= c && b >= c || b <= c){
-                return true;
-            }else if (a > b || a < b && a > c || a < c && b > c || b < c){
-                return false;
-            }
-            return a >= b || a <= b && a >= c || a <= c && b >= c || b <= c;
+             if (a > b || a < b && a > c || c > a && b > c || b < c){
+             return true;
+             } else if (a <= b || a <= c && b <= c){
+                 return false;
+             }
+             return true;
         }
 
         public static void main(String[] args) {

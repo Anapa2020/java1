@@ -14,7 +14,7 @@ public class Animal{
         ANIMAL,
         COW,
         HAMSTER,
-        DUCK;
+        DUCK,
 
     }
     public AnimalKind getKind(){
@@ -35,7 +35,7 @@ public class Animal{
     }
 
     public double getWeight(){
-        return weight;
+        return 6.66;
     }
     public double getFoodCoeff(){
         return 0.02;
@@ -45,7 +45,7 @@ public class Animal{
     }
 
     public String toStringFull(){
-          return  "I am  " + getKind() +", eat " + getFoodKind() + " weight " + calculateFoodWeight();
+          return  "I am " + getKind() +", eat " + getFoodKind() + " weight " + calculateFoodWeight();
     }
     public static void main(String[] args) {
 

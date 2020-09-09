@@ -10,7 +10,7 @@ public class ComplexNum {
 
     }
     public String toString(){
-        String result = String.valueOf(a) + " + " + b + "i";
+        String result = String.valueOf(a) + "+" + b + "i";
         return result;
     }
 

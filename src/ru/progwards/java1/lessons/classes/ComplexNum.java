@@ -27,7 +27,7 @@ public class ComplexNum {
         return result;
     }
     public ComplexNum div(ComplexNum num){
-        ComplexNum result = new ComplexNum((this.a * num.a) + (this.b * num.b) / (num.a * num.a +num.b * num.b),(this.b * num.a -this.a * num.b) / (num.a * num.a + num.b * num.b));
+        ComplexNum result = new ComplexNum((this.a * num.a + this.b * num.b) / (num.a * num.a +num.b * num.b),(this.b * num.a -this.a * num.b) / (num.a * num.a + num.b * num.b));
         return result;
     }
 

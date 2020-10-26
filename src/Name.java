@@ -6,8 +6,8 @@ public class Name {
     }
 
     public static void main(String[] args) {
-        String greeting = "Привет,";
-        String name = "Доли!";
+      String greeting = "Привет,";
+      String name = "Доли!";
         System.out.print(greeting);
         System.out.println(name);
 
@@ -15,4 +15,3 @@ public class Name {
     }
 
 }
-

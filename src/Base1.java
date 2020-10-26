@@ -20,10 +20,10 @@ public class Base1 {
 
     }
     public static String plusJava(String message){
-        String str = "Java - ";
-        String str2 = " язык программирования";
-        System.out.println(message);
-        return str+message+str2;
+       String str = "Java - ";
+       String str2 = " язык программирования";
+       System.out.println(message);
+       return str+message+str2;
     }
 
     public static void main(String[] args) {
@@ -40,4 +40,3 @@ public class Base1 {
 
 
 }
-

@@ -1,4 +1,7 @@
+import java.time.Year;
+
 public class Base2 {
+
     static final String X_EQUALS = "x = ";
     static final String Y_EQUALS = "y = ";
     static final String A_EQUALS = "a = ";
@@ -37,16 +40,15 @@ public class Base2 {
     }
 
     public static void main(String[] args) {
-        subtraction(45,12);
-        subtraction(23,55);
-        addition(128,787);
-        addition(528,387);
-        multiplication(124,87);
-        multiplication(1528,3);
-        calculation();
-        calculation(11,25,410);
-        calculation(100,9,98);
+       subtraction(45,12);
+       subtraction(23,55);
+       addition(128,787);
+       addition(528,387);
+       multiplication(124,87);
+       multiplication(1528,3);
+       calculation();
+       calculation(11,25,410);
+       calculation(100,9,98);
 
     }
 }
-

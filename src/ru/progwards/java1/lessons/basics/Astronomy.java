@@ -24,11 +24,11 @@ public class Astronomy {
             return sphereSquare(JUPITER_SQUARE);
         }
         public static Double earthVsMercury(){
-            return EARTH_SQUARE/MERCURY_SQUARE;
+            return earthSquare()/mercurySquare();
 
         }
         public static Double earthVsJupiter(){
-            return EARTH_SQUARE/JUPITER_SQUARE;
+            return earthSquare()/jupiterSquare();
         }
 
         public static void main(String[] args) {

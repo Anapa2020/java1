@@ -2,23 +2,26 @@ package ru.progwards.java1.lessons.basics;
 
 public class AccuracyDoubleFloat {
     public static final double PI = 3.14;
-    public static final double R = 6371.2;
-    public static final double VOLUME = 4 / 3 * PI * (R * R * R);
+    public static final double EARTH_RADIUS = 6371.2;
+
 
     public static double volumeBallDouble(double radius){
-        return radius;
+        final double VOLUME_BALL = 4.0 / 3.0 * PI * (EARTH_RADIUS * EARTH_RADIUS * EARTH_RADIUS);
+        return VOLUME_BALL;
     }
     public static float volumeBallFloat(float radius){
-        return (float) radius;
+        final double VOLUME_BALL = 4.0 / 3.0 * PI * (EARTH_RADIUS * EARTH_RADIUS * EARTH_RADIUS);
+        return (float) VOLUME_BALL;
     }
     public static double calculateAccuracy(double radius){
-        return radius;
+        return volumeBallDouble(0)-volumeBallFloat(0);
     }
 
     public static void main(String[] args) {
-        System.out.println("Объём шара с радиусом " + volumeBallDouble(VOLUME));
-        System.out.println("Объём шара с радиусом " + volumeBallFloat((float)VOLUME));
-        System.out.println("Разницу между функциями volumeBallDouble и volumeBallFloat " + calculateAccuracy(VOLUME-(float)VOLUME));
+
+        System.out.println(volumeBallDouble(EARTH_RADIUS));
+        System.out.println(volumeBallFloat((float)EARTH_RADIUS));
     }
 }
+
 

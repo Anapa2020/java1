@@ -4,13 +4,13 @@ import com.sun.source.tree.BreakTree;
 
 public class CyclesGoldenFibo {
     public static boolean containsDigit(int number, int digit) {
+    for (; number == digit; number++){
 
-        for (int n = number; n != 0; n /= 10) {
-            int dig = n % 10;
-            digit = digit * 10 + digit;
-        }
-        return false;
+        return true;
     }
+    return false;
+    }
+
 
     public static int fiboNumber(int n){
         int fibo1 = 1;

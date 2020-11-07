@@ -7,10 +7,10 @@ public class CyclesGoldenFibo {
         int dig = (number % 10) *10;
         number /= 10;
 
-        for (int i = 1; i == digit; i++) {
+        for (int i = 1; i == number; i++) {
            return true;
         }
-        return true;
+        return false;
     }
 
     public static int fiboNumber(int n){
@@ -31,12 +31,13 @@ public class CyclesGoldenFibo {
         }else if (a > b || a > c){
             return false;
         }
-        return false;
+        return true;
     }
 
 
     public static void main(String[] args) {
-        System.out.println(containsDigit(123,1));
+        System.out.println(containsDigit(12345,0));
+        System.out.println(containsDigit(0,1));
         System.out.println(fiboNumber(10));
         System.out.println(isGoldenTriangle(7,7,3));
         System.out.println(" 1,1,2,3,5,8,13,21,34,55,89,144,233,377,610 ");

@@ -4,13 +4,13 @@ import com.sun.source.tree.BreakTree;
 
 public class CyclesGoldenFibo {
     public static boolean containsDigit(int number, int digit) {
-    for (; number == digit; number++){
-
+        if (number >= digit){
+            return true;
+        }else if (number != digit){
+            return false;
+        }
         return true;
     }
-    return false;
-    }
-
 
     public static int fiboNumber(int n){
         int fibo1 = 1;
@@ -30,12 +30,12 @@ public class CyclesGoldenFibo {
         }else if (a > b || a > c){
             return false;
         }
-        return true;
+        return false;
     }
 
 
     public static void main(String[] args) {
-        System.out.println(containsDigit(12345,0));
+        System.out.println(containsDigit(12345,1));
         System.out.println(containsDigit(0,1));
         System.out.println(fiboNumber(10));
         System.out.println(isGoldenTriangle(7,7,3));

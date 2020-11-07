@@ -20,9 +20,9 @@ public class TriangleInfo {
 
 }
     public static boolean isIsoscelesTriangle(int a, int b, int c){
-        if (a > b || a < b && a > c || c > a && b > c || b < c){
+        if (a == b && b == c || b == c && c == a){
           return true;
-        }else if (a <= b || a <= c && b <= c){
+        }else if (a != b && b != c || b != c && c != a){
             return false;
 
         }    return false;
@@ -32,7 +32,7 @@ public class TriangleInfo {
         System.out.println(isTriangle(2, 2, 3));
        System.out.println(isTriangle(2, 3, 4));
         System.out.println(isTriangle(3, 2, 5));
-        System.out.println(isTriangle(2, 3, 6));
+       System.out.println(isTriangle(2, 3, 6));
        System.out.println(isTriangle(3, 3, 9));
         System.out.println(isRightTriangle(2, 3, 6));
         System.out.println(isIsoscelesTriangle(2, 2, 3));

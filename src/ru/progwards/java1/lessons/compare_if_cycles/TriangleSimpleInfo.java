@@ -22,21 +22,21 @@ public class TriangleSimpleInfo {
       return 10;
    }
     public static boolean isEquilateralTriangle(int a, int b, int c){
-        if (a == b && a == c){
-            return true;
-        }else if (a != b && a != c){
-            return false;
-        }
-        return true;
+       if (a == b && a == c && b == c){
+           return true;
+       }else if (a != b & a != c & b != c){
+           return false;
+       }
+       return false;
     }
 
     public static void main(String[] args) {
-        System.out.println(maxSide(2,2,3));
-        System.out.println(minSide(2,3,2));
-        System.out.println(isEquilateralTriangle(2, 2, 3));
-        System.out.println(isEquilateralTriangle(2, 3, 2));
-        System.out.println(isEquilateralTriangle(3, 2, 2));
+        //System.out.println(maxSide(2,2,3));
+      //  System.out.println(minSide(2,3,2));
+        System.out.println(isEquilateralTriangle(2, 2, 1));
+       // System.out.println(isEquilateralTriangle(2, 3, 2));
+       // System.out.println(isEquilateralTriangle(3, 2, 2));
         System.out.println(isEquilateralTriangle(2, 2, 2));
-        System.out.println(isEquilateralTriangle(3, 3, 3));
+       // System.out.println(isEquilateralTriangle(3, 3, 3));
     }
 }

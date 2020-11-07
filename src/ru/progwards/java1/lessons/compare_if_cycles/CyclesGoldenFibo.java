@@ -10,7 +10,7 @@ public class CyclesGoldenFibo {
         for (int i = 1; i == digit; i++) {
            return true;
         }
-        return false;
+        return true;
     }
 
     public static int fiboNumber(int n){
@@ -31,7 +31,7 @@ public class CyclesGoldenFibo {
         }else if (a > b || a > c){
             return false;
         }
-        return true;
+        return false;
     }
 
 

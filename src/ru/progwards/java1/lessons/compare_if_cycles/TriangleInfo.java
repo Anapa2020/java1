@@ -25,7 +25,7 @@ public class TriangleInfo {
         }else if (a <= b || a <= c && b <= c){
             return false;
 
-        }    return true;
+        }    return false;
     }
 
     public static void main(String[] args) {

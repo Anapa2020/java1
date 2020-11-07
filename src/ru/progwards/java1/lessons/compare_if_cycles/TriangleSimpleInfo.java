@@ -31,12 +31,12 @@ public class TriangleSimpleInfo {
     }
 
     public static void main(String[] args) {
-        //System.out.println(maxSide(2,2,3));
-      //  System.out.println(minSide(2,3,2));
+        System.out.println(maxSide(2,2,3));
+        System.out.println(minSide(2,3,2));
         System.out.println(isEquilateralTriangle(2, 2, 1));
-       // System.out.println(isEquilateralTriangle(2, 3, 2));
-       // System.out.println(isEquilateralTriangle(3, 2, 2));
+        System.out.println(isEquilateralTriangle(2, 3, 2));
+        System.out.println(isEquilateralTriangle(3, 2, 2));
         System.out.println(isEquilateralTriangle(2, 2, 2));
-       // System.out.println(isEquilateralTriangle(3, 3, 3));
+        System.out.println(isEquilateralTriangle(3, 3, 3));
     }
 }

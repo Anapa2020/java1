@@ -1,14 +1,13 @@
 package ru.progwards.java1.lessons.compare_if_cycles;
 
+import com.sun.source.tree.BreakTree;
+
 public class CyclesGoldenFibo {
     public static boolean containsDigit(int number, int digit) {
-        int num = (number % 10) * 100;
-        number = number / 10;
-        int dig = (number % 10) *10;
-        number /= 10;
 
-        for (int i = 1; i == number; i++) {
-           return true;
+        for (int n = number; n != 0; n /= 10) {
+            int dig = n % 10;
+            digit = digit * 10 + digit;
         }
         return false;
     }

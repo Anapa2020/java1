@@ -35,13 +35,13 @@ public class CyclesGoldenFibo {
         }else if (a > b || a > c){
             return false;
         }
-        return false;
+        return true;
     }
 
 
     public static void main(String[] args) {
-        System.out.println(containsDigit(12345,2));
-        System.out.println(containsDigit(0,0));
+        System.out.println(containsDigit(12345,0));
+        System.out.println(containsDigit(0,1));
         System.out.println(fiboNumber(10));
         System.out.println(isGoldenTriangle(7,7,3));
         System.out.println(" 1,1,2,3,5,8,13,21,34,55,89,144,233,377,610 ");

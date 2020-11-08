@@ -9,7 +9,7 @@ public class CyclesGoldenFibo {
        }
        int i = number;
          while (i > 0){
-           if (number % 10 == digit){
+           if (i % 10 == digit){
             return true;
            }else i /= number;
          }

@@ -38,9 +38,9 @@ public class CyclesGoldenFibo {
             i3 = i1 + i2;
             i1 = i2;
             i2 = i3;
-            return true;
+            return false;
         }
-        return  false;
+        return  true;
     }
 
     public static void main(String[] args) {

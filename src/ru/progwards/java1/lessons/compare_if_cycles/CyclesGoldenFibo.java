@@ -4,9 +4,11 @@ import com.sun.source.tree.BreakTree;
 
 public class CyclesGoldenFibo {
     public static boolean containsDigit(int number, int digit) {
-
+        if (number==0 && digit == 0){
+            return true;
+        }
        int i = number;
-         while (i >= 0){
+         while (i > 0){
            if (i % 10 == digit){
             return true;
            }else

@@ -11,7 +11,7 @@ public class CyclesGoldenFibo {
          while (i > 0){
            if (number % 10 == digit){
             return true;
-           }else number /= number;
+           }else i /= number;
          }
        return false;
     }
@@ -39,7 +39,7 @@ public class CyclesGoldenFibo {
 
 
     public static void main(String[] args) {
-        System.out.println(containsDigit(12345,1));
+        System.out.println(containsDigit(12345,0));
         System.out.println(containsDigit(0,1));
         System.out.println(fiboNumber(10));
         System.out.println(isGoldenTriangle(7,7,3));

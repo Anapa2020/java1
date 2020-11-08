@@ -38,7 +38,7 @@ public class CyclesGoldenFibo {
             i3 = i1 + i2;
             i1 = i2;
             i2 = i3;
-            return false;
+            return true;
         }
         return  true;
     }
@@ -47,7 +47,7 @@ public class CyclesGoldenFibo {
         System.out.println(containsDigit(12345,0));
         System.out.println(containsDigit(0,1));
         System.out.println(fiboNumber(10));
-        System.out.println(isGoldenTriangle(34,34,55));
+        System.out.println(isGoldenTriangle(55,55,34));
         System.out.println(" 1,1,2,3,5,8,13,21,34,55,89,144,233,377,610 ");
     }
 

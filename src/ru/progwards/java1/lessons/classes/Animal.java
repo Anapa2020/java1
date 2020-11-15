@@ -13,8 +13,6 @@ public class Animal {
         HAMSTER,
         DUCK,
 
-
-
     }
     enum FoodKind{
         UNKNOWN,

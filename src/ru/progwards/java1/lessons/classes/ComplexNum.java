@@ -9,10 +9,11 @@ public class ComplexNum {
         this.b = b;
     }
     public String toString(){
-        String result = String.valueOf(this.a) + this.b + "i";
+        String result = String.valueOf(a) + b + "i";
         return result;
     }
     public ComplexNum add(ComplexNum num){
+        //ComplexNum result = new ComplexNum(this.a + num.a,this.b + num.b);
         ComplexNum result = new ComplexNum(this.a + num.a,this.b + num.b);
         return result;
     }

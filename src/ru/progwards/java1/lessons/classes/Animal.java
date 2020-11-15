@@ -3,50 +3,66 @@ package ru.progwards.java1.lessons.classes;
 public class Animal {
     double weight;
 
-    public Animal(double weight){
-    this.weight = weight;
+    public Animal(double weight) {
+        this.weight = weight;
     }
 
-    enum AnimalKind{
+    enum AnimalKind {
         ANIMAL,
         COW,
         HAMSTER,
         DUCK,
 
     }
-    enum FoodKind{
+
+    enum FoodKind {
         UNKNOWN,
         HAY,
         CORN,
     }
 
-    public AnimalKind getKind(){
+    public AnimalKind getKind() {
         return AnimalKind.ANIMAL;
     }
-    public FoodKind getFoodKind(){
+
+    public FoodKind getFoodKind() {
         return FoodKind.UNKNOWN;
     }
-    public String toString(){
-        return "I am " +  getKind() +"," + " eat " + getFoodKind();
+
+    public String toString() {
+        return "I am " + getKind() + ", eat " + getFoodKind();
     }
-    public double getWeight(){
+
+    public double getWeight() {
         return weight;
     }
-    public double getFoodCoeff(){
+
+    public double getFoodCoeff() {
         return 0.02;
     }
-    public double calculateFoodWeight(){
-        return getWeight()*getFoodCoeff();
-    }
-    public String toStringFull(){
-        return "I am " + getKind() + "," + " eat " + getFoodKind() +" "+calculateFoodWeight();
-    }
-    public static void main(String[] args) {
 
-        System.out.println(" I am  " + AnimalKind.ANIMAL +", eat " + FoodKind.UNKNOWN);
-        System.out.println(" I am  " + AnimalKind.COW +", eat " + FoodKind.HAY);
-        System.out.println(" I am  " + AnimalKind.HAMSTER +", eat " + FoodKind.CORN);
-        System.out.println(" I am  " + AnimalKind.DUCK +", eat " + FoodKind.CORN);
+    public double calculateFoodWeight() {
+        return getWeight() * getFoodCoeff();
+    }
+
+    public String toStringFull() {
+        return "I am " + getKind() + ", eat " + getFoodKind() + " " + calculateFoodWeight();
+    }
+
+    public static void main(String[] args) {
+        Animal animal = new Animal(400);
+        System.out.println(animal);
+
+        Cow cow = new Cow(200);
+        System.out.println(cow);
+
+        Hamster hamster = new Hamster(100);
+        System.out.println(hamster);
+
+        Duck duck = new Duck(150);
+        System.out.println(duck);
+
+
     }
 }
 

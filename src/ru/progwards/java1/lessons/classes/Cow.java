@@ -15,8 +15,8 @@ public class Cow extends Animal{
         return 0.05;
     }
 
-    @Override
-    public String toString() {
-        return super.toString();
-    }
+//    @Override
+//    public String toString() {
+//        return super.toString();
+//    }
 }

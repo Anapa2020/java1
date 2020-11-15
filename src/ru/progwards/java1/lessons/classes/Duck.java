@@ -15,8 +15,8 @@ public class Duck extends Animal{
         return 0.04;
     }
 
-    @Override
-    public String toString() {
-        return super.toString();
-    }
+//    @Override
+//    public String toString() {
+//        return super.toString();
+//    }
 }

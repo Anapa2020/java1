@@ -29,7 +29,7 @@ public class Animal {
         return FoodKind.UNKNOWN;
     }
     public String toString(){
-        return "I am" +  getKind() +"," + "eat" + getFoodKind();
+        return "I am " +  getKind() +"," + " eat " + getFoodKind();
     }
     public double getWeight(){
         return weight;
@@ -41,7 +41,7 @@ public class Animal {
         return getWeight()*getFoodCoeff();
     }
     public String toStringFull(){
-        return "I am " + getKind() + "," + "eat " + getFoodKind() + calculateFoodWeight();
+        return "I am " + getKind() + "," + " eat " + getFoodKind() +" "+calculateFoodWeight();
     }
     public static void main(String[] args) {
 

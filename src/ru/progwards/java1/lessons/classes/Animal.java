@@ -12,7 +12,7 @@ public class Animal {
         COW,
         HAMSTER,
         DUCK,
-        ;
+
 
 
     }

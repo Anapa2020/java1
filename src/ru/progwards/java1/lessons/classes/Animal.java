@@ -41,7 +41,7 @@ public class Animal {
         return getWeight()*getFoodCoeff();
     }
     public String toStringFull(){
-        return "I am" + getKind() + "," + "eat" + getFoodKind() + calculateFoodWeight();
+        return "I am " + getKind() + "," + "eat " + getFoodKind() + calculateFoodWeight();
     }
     public static void main(String[] args) {
 

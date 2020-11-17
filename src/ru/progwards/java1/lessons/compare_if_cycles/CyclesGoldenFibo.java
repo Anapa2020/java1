@@ -31,16 +31,9 @@ public class CyclesGoldenFibo {
     }
 
     public static boolean isGoldenTriangle(int a, int b, int c) {
-      int i1 = a;
-      int i2 = b;
-      int i3 = c;
-        for (int i = 3; i <= i1 + i2 + i3; i++){
-            i3 = i1 + i2;
-            i1 = i2;
-            i2 = i3;
-            return true;
-        }
-        return  true;
+   if ( a == b && a != c){
+       return true;
+   }return false;
     }
 
     public static void main(String[] args) {

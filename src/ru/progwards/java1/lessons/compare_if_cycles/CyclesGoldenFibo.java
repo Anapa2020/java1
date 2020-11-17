@@ -31,19 +31,24 @@ public class CyclesGoldenFibo {
     }
 
     public static boolean isGoldenTriangle(int a, int b, int c) {
-   if ( a == b && a != c){
-       return true;
-   }return false;
+        float f = 0;
+        if (a == b)
+            f = (float) a / c;
+        else if (b == c)
+            f = (float) b / a;
+        else if (c == a)
+            f = (float) c / b;
+        return f > 1.61703f && f < 1.61903f;
     }
 
     public static void main(String[] args) {
-        System.out.println(containsDigit(12345,0));
-        System.out.println(containsDigit(0,1));
+        System.out.println(containsDigit(12345, 0));
+        System.out.println(containsDigit(0, 1));
         System.out.println(fiboNumber(10));
-        System.out.println(isGoldenTriangle(55,55,34));
+        System.out.println(isGoldenTriangle(55, 55, 34));
         System.out.println(" 1,1,2,3,5,8,13,21,34,55,89,144,233,377,610 ");
     }
 
 
-    }
+}
 

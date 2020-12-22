@@ -1,5 +1,7 @@
 package ru.progwards.java1.lessons.arrays;
 
+import ru.progwards.java1.lessons.test.add;
+
 import java.util.Arrays;
 
 public class DIntArray {
@@ -11,8 +13,8 @@ public class DIntArray {
     }
 
     public void add(int num) {
-        int[] tempArray = new int[array.length+1];
-        System.arraycopy(array,0,tempArray,0,array.length);
+        int[] tempArray = new int[array.length + 1];
+        System.arraycopy(array, 0, tempArray, 0, array.length);
         tempArray[array.length] = num;
         array = tempArray;
 
@@ -20,16 +22,17 @@ public class DIntArray {
     }
 
     public void atInsert(int pos, int num) {
-        int[] tempArray = new int[array.length+1];
-        System.arraycopy(array,0,tempArray,0,array.length);
-        tempArray[pos]=num;
+        int[] tempArray = new int[array.length + 1];
+        System.arraycopy(array, 0, tempArray, 0, array.length);
+        tempArray[pos] = num;
+        at(10);
 
     }
 
     public void atDelete(int pos) {
-        int[] tempArray = new int[array.length-1];
-        System.arraycopy(array,0,tempArray,0,tempArray.length);
-        System.arraycopy(array,array.length-1,tempArray,array.length-1,array.length);
+        int[] tempArray = new int[array.length - 1];
+        System.arraycopy(array, 0, tempArray, 0, tempArray.length);
+        System.arraycopy(array, array.length - 1, tempArray, array.length - 1, array.length);
         tempArray[array.length] = pos;
         array = tempArray;
 
@@ -42,12 +45,6 @@ public class DIntArray {
 
 
     public static void main(String[] args) {
-        System.out.println();
-
-
-
-
-
 
 
     }

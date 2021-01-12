@@ -2,6 +2,7 @@ package ru.progwards.java1.lessons.arrays;
 
 
 import java.util.Arrays;
+import java.util.List;
 
 public class DIntArray {
 
@@ -22,8 +23,11 @@ public class DIntArray {
 
     public void atInsert(int pos, int num) {
         int[] tempArray = new int[array.length +1];
-        System.arraycopy(array,0,tempArray,0,2);
-        System.arraycopy(array,2,tempArray,3,6);
+        System.arraycopy(array,0,tempArray,0,array.length);
+        for (int i = array.length; i > pos; --i) {
+            tempArray[i] = tempArray[i-1];
+
+        }
         tempArray[pos] = num;
         array = tempArray;
 
@@ -32,8 +36,11 @@ public class DIntArray {
 
     public void atDelete(int pos) {
         int[] tempArray = new int[array.length - 1];
-        System.arraycopy(array,0,tempArray,0,2);
-        System.arraycopy(array,3,tempArray,2,6);
+        for (int i = 0; i < pos; i++)
+            tempArray[i] = array[i];
+        for (int i = pos + 1; i <array.length ; i++)
+            tempArray[i - 1] = array[i];
+
         array = tempArray;
 
     }
@@ -56,12 +63,12 @@ public class DIntArray {
 
             System.out.println(Arrays.toString(dIntArray.array));
 
-            dIntArray.atInsert(3, 100);
+            dIntArray.atInsert(6, 100);
             System.out.println(Arrays.toString(dIntArray.array));
 
-//
-//        dIntArray.atDelete(5);
-//        System.out.println(Arrays.toString(dIntArray.array));
+
+        dIntArray.atDelete(6);
+        System.out.println(Arrays.toString(dIntArray.array));
 
 
         }

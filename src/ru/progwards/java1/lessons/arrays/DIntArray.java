@@ -37,37 +37,33 @@ public class DIntArray {
         array = tempArray;
 
     }
+        public int at ( int pos){
 
-    public int at(int pos) {
-
-        return array[pos];
-    }
-
+            return array[pos];
+        }
 
 
+        public static void main (String[]args){
+            DIntArray dIntArray = new DIntArray();
+            dIntArray.add(10);
+            dIntArray.add(15);
+            dIntArray.add(25);
+            dIntArray.add(35);
+            dIntArray.add(45);
+            dIntArray.add(55);
+            dIntArray.add(65);
+            dIntArray.add(75);
 
-    public static void main(String[] args) {
-        DIntArray dIntArray = new DIntArray();
-        dIntArray.add(10);
-        dIntArray.add(15);
-        dIntArray.add(25);
-        dIntArray.add(35);
-        dIntArray.add(45);
-        dIntArray.add(55);
-        dIntArray.add(65);
-        dIntArray.add(75);
+            System.out.println(Arrays.toString(dIntArray.array));
 
-        System.out.println(Arrays.toString(dIntArray.array));
+            dIntArray.atInsert(3, 100);
+            System.out.println(Arrays.toString(dIntArray.array));
 
-        dIntArray.atInsert(2,100);
-        System.out.println(Arrays.toString(dIntArray.array));
+//
+//        dIntArray.atDelete(5);
+//        System.out.println(Arrays.toString(dIntArray.array));
 
 
-        dIntArray.atDelete(2);
-        System.out.println(Arrays.toString(dIntArray.array));
-
-
+        }
 
     }
-
-}
